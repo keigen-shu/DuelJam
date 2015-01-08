@@ -1,0 +1,38 @@
+{
+    "video": {
+        "resolution": [ 1280, 720 ],
+        "fullscreen": false,
+        "flip-interval": 1,
+        "refresh-rate": 60
+    },
+    "audio": {
+        "sample-rate": 48000,
+        "frame-rate": 1024,
+        "fft": {
+            "bars": 512,
+            "fade": 2,
+            "window": "Hanning"
+        },
+
+        "maximizer": {
+            "boost"         :  0.0,
+            "threshold"     : -1.0,
+            "peak-release"  :  1,
+            "slow-release"  :  200,
+            "ceiling"       :  1.0
+        }
+    },
+    "gui": {
+        "scroll-delay": 2
+    },
+    "player": {
+        "P1": {
+            "autoplay": false,
+            "map-7K": "sdf jkl",
+            "map-9K": "asdf jkl;",
+            "speedx": 8.0
+        }
+    },
+    "debug": true
+
+}

@@ -1,0 +1,3 @@
+" Force C++11 syntax for *.cpp/*.hpp files.
+" vimscript: http://www.vim.org/scripts/script.php?script_id=3797
+au BufNewFile,BufRead *.cpp,*.hpp set syntax=cpp11 sw=4 ts=4 sts=4 tw=80 noet cino=g0,is,N-s

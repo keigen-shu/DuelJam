@@ -1,0 +1,30 @@
+Installation Instructions
+*************************
+
+For Linux users, run the following commands on the root folder of the project:
+
+    $ autoreconf -i
+
+This will generate the configure script for the program.
+
+    $ ./configure --prefix=`pwd`
+
+This will run the configure script to generate the necessary Makefiles to
+compile the game and install it to the current directory. The prefix will
+change in the future once we figure out where to put the resources used in the
+game. It is recommended that you add `CXXFLAGS="-Wall -ggdb"` at the end of
+the command to configure for a debuggable build.
+
+    $ make
+
+This command will start the compilation of the game. If you have a multi-core
+system it is recommended that you add `-jX` (replace `X` with half the number
+of CPU cores in your system) to speed up the compilation.
+
+    $ make install
+
+This command will make the system install(copy) the binary into the `bin`
+folder. To run the game, simply run:
+
+    $ cd bin
+    $ ./DuelJam
